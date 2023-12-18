@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage('Code Checkout') {
             steps {
-                
                 git 'https://github.com/DevOpsProject-sam/static-web-app.git'
             }
         }
