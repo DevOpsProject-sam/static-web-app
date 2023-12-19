@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Code Checkout') {
             steps {
-                git 'https://github.com/DevOpsProject-sam/static-web-app.git'
+                git branch: 'main', url: 'https://github.com/DevOpsProject-sam/static-web-app.git'
             }
         }
         stage('Continious Deploy') {
