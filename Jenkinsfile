@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Continious Deploy') {
             steps {
-                sh 'scp -i /home/ubuntu/AWSKEY.pem /project/static-web-app/* ubuntu@172.31.36.28:/var/www/html/'
+                sh 'scp -i /home/ubuntu/AWSKEY.pem /project/static-web-app/* ubuntu@52.202.168.43:/var/www/html/'
             }
         }
     }
